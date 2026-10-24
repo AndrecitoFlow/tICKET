@@ -21,7 +21,7 @@ public class TicketController {
         return new ResponseEntity<>(ticketService.crearTicket(dto), HttpStatus.CREATED);
     }
 
-    @PatchMapping("/{id}/estado")
+    @PatchMapping("/{id}/estadO")
     public ResponseEntity<Ticket> actualizarEstado(@PathVariable Long id) {
         return ResponseEntity.ok(ticketService.actualizarEstado(id));
     }
